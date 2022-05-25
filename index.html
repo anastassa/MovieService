@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" href = "css/style.css">
+        <title>MovieService</title>
+    </head>
+    
+    <body>
+        <div class= "container">
+            
+            <header>
+
+                <div class="logoHeader">
+                    <div class="filmIcon">
+                        <img src="img/filmIcon.png" width="120px" height="auto">
+                    </div>
+                    <div class="logoText">
+                        <p>Movie</p>
+                        <p>Service</p>
+                    </div>
+
+                </div>
+
+                <div class="Navigation">
+                    <div class="SearchEl">
+                        <div class="IconSearch">
+                            <img src="img/searchFilm.png" alt="" width="80px" height="auto">
+                         </div>
+                         <div class="NavText", id="catalogText">
+                            <a href="index.html">Каталог</a>
+                        </div>
+                    </div>
+
+                    <div class="AddEl">
+                        <div class="IconAdd">
+                            <img src="img/AddFilm.png" alt="" width="80px" height="auto">
+                         </div>
+                         <div class="NavText">
+                            <a href="filmForm.html">Добавить фильм</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="filter">
+                <label class="label-text-filter">
+                    Страна
+                    <select id="country-filter" class="value-filter" onchange="">
+                    </select>
+                </label>
+                <label class="label-text-filter">
+                    Жанр
+                    <select id="genre-filter" class="value-filter">
+                    </select>
+                </label>
+                <label class="label-text-filter">
+                    Дата выхода с
+                    <input type="date" id="yearFrom-filter" class="value-filter">
+                    по
+                    <input type="date" id="yearTo-filter" class="value-filter">
+                </label>
+                <button class="filter__btn" onclick="offlineCatalog.renderCatalogByFilter()">Найти</button>
+            </div>
+            
+            </div>
+
+            <div id="catalog"></div>
+            <div id="comment"></div>
+            <div id="newcomment"></div>
+            <div id="add-film"></div>   
+
+        </div>
+        <script src="js/script.js"></script>
+        <script src="js/script2.js"></script>
+    </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" href = "css/style.css">
+        <title>FilmForm</title>
+    </head>
+    
+    <body>
+        <div class= "container">
+            
+            <header>
+
+                <div class="logoHeader">
+                    <div class="filmIcon">
+                        <img src="img/filmIcon.png" width="120px" height="auto">
+                    </div>
+                    <div class="logoText">
+                        <p>Movie</p>
+                        <p>Service</p>
+                    </div>
+
+                </div>
+
+                <div class="Navigation">
+                    <div class="SearchEl">
+                        <div class="IconSearch">
+                            <img src="img/searchFilm.png" alt="" width="80px" height="auto">
+                         </div>
+                         <div class="NavText", id="catalogText">
+                            <a href="index.html">Каталог</a>
+                        </div>
+                    </div>
+
+                    <div class="AddEl">
+                        <div class="IconAdd">
+                            <img src="img/AddFilm.png" alt="" width="80px" height="auto">
+                         </div>
+                         <div class="NavText">
+                            <a href="createFilm.html">Добавить фильм</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="newFilm-container">
+                <form id="newFilm">
+                    <label class="newFilm-label">
+                        Название:
+                        <div class="split"></div>
+                        <input type="text" id="name" placeholder="" required>
+                    </label>
+                    <div class="split"></div>
+            
+                    <label class="newFilm-label">
+                        Страна:
+                        <div class="split"></div>
+                        <select id="country-filter" class="value-filter"></select>
+                    </label>
+                    <div class="split"></div>
+            
+                    <label class="newFilm-label">
+                        Жанр:
+                        <div class="split"></div>
+                        <select id="genre-filter" class="value-filter"></select>
+                    </label>
+                    <div class="split"></div>
+            
+                    <label class="newFilm-label">
+                        Режиссёр:
+                        <div class="split"></div>
+                        <input type="text" id="director1" class="value-filter" placeholder="">
+                        <input type="text" id="director2" class="value-filter" placeholder="">
+                        <input type="text" id="director3" class="value-filter" placeholder="">
+                    </label>
+                    <div class="split"></div>
+            
+                    <label class="newFilm-label">
+                        Сценарист:
+                        <div class="split"></div>
+                        <input type="text" id="screenwriter" class="value-filter" placeholder="">
+                    </label>
+                    <div class="split"></div>
+            
+                    <label class="newFilm-label">
+                        Продюсер:
+                        <div class="split"></div>
+                        <input type="text" id="producer" class="value-filter" placeholder="">
+                    </label>
+                    <div class="split"></div>
+            
+                    <label class="newFilm-label">
+                        Оператор:
+                        <div class="split"></div>
+                        <input type="text" id="operator" class="value-filter" placeholder="">
+                    </label>
+                    <div class="split"></div>
+            
+                    <label class="newFilm-label">
+                        Композитор:
+                        <div class="split"></div>
+                        <input type="text" id="composer" class="value-filter" placeholder="">
+                    </label>
+                    <div class="split"></div>
+            
+                    <label class="newFilm-label">
+                        Бюджет фильма:
+                        <div class="split"></div>
+                        <input type="number" id="budget" class="value-filter" placeholder="" min="0">
+                    </label>
+                    <div class="split"></div>
+            
+                    <label class="newFilm-label">
+                        Мировые сборы:
+                        <div class="split"></div>
+                        <input type="number" id="worldFees" class="value-filter" placeholder="" min="0">
+                    </label>
+                    <div class="split"></div>
+            
+                    <label class="newFilm-label">
+                        Возрастной рейтинг:
+                        <div class="split"></div>
+                        <input type="text" id="ageRate" class="value-filter" placeholder="">
+                    </label>
+                    <div class="split"></div>
+            
+                    <label class="newFilm-label">
+                        Длительность фильма:
+                        <div class="split"></div>
+                        <input type="time" id="filmLength" class="value-filter" required>
+                    </label>
+                    <div class="split"></div>
+            
+                    <label class="newFilm-label">
+                        Дата выхода:
+                        <div class="split"></div>
+                        <input type="date" id="releaseDate" class="value-filter" required>
+                    </label>
+                    <div class="split"></div>
+            
+                    <label class="newFilm-label">
+                        Постер:
+                        <div class="split"></div>
+                        <input type="text" id="posterUrl" class="value-filter">
+                    </label>
+                    <div class="split"></div>
+            
+                    <button type="submit" onclick="createFilm.addToFilmList()">Создать</button>
+                </form>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+        <script src="js/script3.js"></script>
+    </body>
+</html>
